@@ -1,4 +1,71 @@
-img{
-height: 70px;
-width: 80px;
+
+html{
+    font-size: 80%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-nav{
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    
+
+}
+.logo {
+    display: flex;
+   
+    grid-column: 1/3;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee,rgb(229, 171, 69));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo h2 span{
+    font-size: 3.5rem;
+}
+.menu-link{
+    grid-column: 3/4;
+}
+.menu-link ul{
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-link ul li   {
+font-size: 1.5rem;
+}
+.menu-link ul li a{
+    text-transform: capitalize;
+    color:rgb(229, 171, 69);
+    transition: 0.5s;
+}
+.menu-link ul li :hover>a{
+    transform-origin: left;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.socials{
+grid-column: 4/5;
+
+}
+.socials ul{
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
