@@ -35,7 +35,7 @@ const Nav=()=>{
                         <a href="https://www.facebook.com/orangepear.co.in/" target="_OP"><FaFacebook className="fb" /></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/orangepear.co.in/" target="_OP1"><FaInstagramSquare className="instagram" /></a>
+                        <a href="https://instagram.com/orangepear.co.in?igshid=MzRlODBiNWFlZA==" target="_OP1"><FaInstagramSquare className="instagram" /></a>
                     </li>
                 </ul>
             </div>

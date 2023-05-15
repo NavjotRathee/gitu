@@ -9,13 +9,19 @@ html{
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
+.hero-section{
+    text-align: center;
+    text-decoration: dashed;
+}
+
 
 .main-nav{
     width: 100%;
     height: 10rem;
     display: grid;
     grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-    
+    box-shadow: rgba(50,50,93,0.25) 0px 50px 100px -20px,
+    rgba(0,0,0,0.3) 0px 30px 60px -30px;
 
 }
 .logo {
@@ -65,7 +71,11 @@ grid-column: 4/5;
 }
 .socials ul{
     height: 10rem;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
     align-items: center;
+    grid-template-columns: 2fr repeat(3,1fr);
+}
+
+.socials ul li:first-child{
+    grid-column:2/3 ;
 }
